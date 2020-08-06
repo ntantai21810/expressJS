@@ -8,7 +8,8 @@ var port = 3000;
 
 var users = [
     { id: 1, name: 'Tai'},
-    { id: 2, name: 'Tan'}
+    { id: 2, name: 'Tan'},
+    { id: 3, name: 'Nguyen'}
 ]
 
 app.set('views', './views');
