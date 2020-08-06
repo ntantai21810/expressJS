@@ -9,3 +9,5 @@ form(action="/users/search", method="GET")
 ul
     each user in users
         li= user.name
+            span &nbsp
+            a(href="/users/" + user.id) View
