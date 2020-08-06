@@ -1,6 +1,9 @@
 var express = require('express');
 var app = express();
 
+app.use(express.json()) // for parsing application/json
+app.use(express.urlencoded({ extended: true })) // for parsing application/x-www-form-urlencoded
+
 var port = 3000;
 
 var users = [
@@ -32,6 +35,15 @@ app.get('/users/search', function(req, res) {
         name: name,
         users: matchListUsers
     })
+})
+
+app.get('/users/create', function(req, res) {
+    res.render('./users/create');
+})
+
+app.post('/users/create', function(req, res) {
+    users.push(req.body);
+    res.redirect('/users');
 })
 
 app.listen(port, function() {
