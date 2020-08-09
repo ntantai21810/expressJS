@@ -13,6 +13,8 @@ app.set('view engine', 'pug');
 app.use(express.json()) // for parsing application/json
 app.use(express.urlencoded({ extended: true })) // for parsing application/x-www-form-urlencoded
 
+app.use(express.static('public'));
+
 app.get('/', function(req, res) {
     res.render('index.pug', {
         name: "Nguyen Tan Tai"
@@ -22,5 +24,5 @@ app.get('/', function(req, res) {
 app.use('/users', userRoutes);
 
 app.listen(port, function() {
-    console.log("Server start: " + port);
+    console.log("Server start: " + port)
 })
