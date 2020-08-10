@@ -1,25 +1,11 @@
 {
   "users": [
     {
-      "name": "bbb",
-      "id": "M0aSEps75"
-    },
-    {
-      "name": "Tan",
-      "id": "BJxXqMBrY"
-    },
-    {
-      "name": "Tai",
-      "id": "voOLv0M8E"
-    },
-    {
-      "name": "123",
-      "id": "WSkl5n7OG"
-    },
-    {
       "name": "Tai",
       "phone": "123",
-      "id": "_3QBnlbab"
+      "id": "_3QBnlbab",
+      "email": "Tai@info.com",
+      "password": "123456"
     },
     {
       "name": "ABC",
