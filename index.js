@@ -14,7 +14,7 @@ var app = express();
 app.set('views', './views');
 app.set('view engine', 'pug');
 
-app.use(cookieParser());
+app.use(cookieParser('asgafd3243215wgd0a'));
 
 app.use(express.json()) // for parsing application/json
 app.use(express.urlencoded({ extended: true })) // for parsing application/x-www-form-urlencoded
