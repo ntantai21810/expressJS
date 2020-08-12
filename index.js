@@ -5,6 +5,7 @@ var express = require('express');
 var db = require('./db.json')
 var userRoutes = require('./routes/user.route');
 var userAuth = require('./routes/auth.route');
+var productsRouter = require('./routes/products.route')
 var cookieParser = require('cookie-parser');
 
 console.log(process.env.SESSION_SECRET);
@@ -34,6 +35,7 @@ app.get('/', function(req, res) {
 
 app.use('/users', authMiddleWare.requireAuth, userRoutes);
 app.use('/auth', userAuth);
+app.use('/products', productsRouter);
 
 app.listen(port, function() {
     console.log("Server start: " + port)
