@@ -772,5 +772,16 @@
       "description": "sapien placerat ante nulla justo aliquam quis turpis eget elit sodales scelerisque mauris sit amet eros suspendisse accumsan tortor quis",
       "price": 553
     }
+  ],
+  "sessions": [
+    {
+      "id": "NtbL8lQOy",
+      "cart": {
+        "edeb72ea-ddd8-4b0a-b5b8-d73872d3cb49": 11,
+        "3aafd249-67b5-4fe5-91de-b491f2f201ec": 6,
+        "396d46db-896f-4301-91e7-07a2a24a9ccd": 1,
+        "07651aae-0746-4693-9777-230249787769": 1
+      }
+    }
   ]
 }
